@@ -1,5 +1,4 @@
-import { red } from '@mui/material/colors'
-import { experimental_extendTheme as extendTheme } from '@mui/material/styles'
+import { experimental_extendTheme as extendTheme } from '@mui/material/styles';
 
 // A custom theme for this app
 const theme = extendTheme({
@@ -20,6 +19,5 @@ const theme = extendTheme({
     }
   }
   // ...other properties
-})
-
-export default theme
+});
+export default theme;
