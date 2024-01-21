@@ -1,4 +1,3 @@
-import ButtonComponent from './components/ButtonComponent';
 import InputLabel from '@mui/material/InputLabel';
 import MenuItem from '@mui/material/MenuItem';
 import FormControl from '@mui/material/FormControl';
@@ -8,6 +7,7 @@ import LightModeIcon from '@mui/icons-material/LightMode';
 import DarkModeIcon from '@mui/icons-material/DarkMode';
 import SettingsBrightnessIcon from '@mui/icons-material/SettingsBrightness';
 import Box from '@mui/material/Box';
+import Container from '@mui/material/Container';
 
 function SelectMode() {
   const { mode, setMode } = useColorScheme();
@@ -49,8 +49,33 @@ function SelectMode() {
 function App() {
   return (
     <>
-      <SelectMode />
-      <ButtonComponent />
+      <Container disableGutters maxWidth='false' sx={{ height: '100vh', backgroundColor: 'primary.main' }}>
+        <Box sx={{
+          backgroundColor: 'primary.light',
+          height: (theme) => theme.trello.appBarHeight,
+          width: '100%',
+          display: 'flex',
+          alignItems: 'center'
+        }}>
+          <SelectMode />
+        </Box>
+        <Box sx={{
+          backgroundColor: 'primary.dark',
+          height: (theme) => theme.trello.broadBarHeight,
+          width: '100%',
+          display: 'flex',
+          alignItems: 'center'
+        }}>
+          Broad bar
+        </Box>
+        <Box sx={{
+          backgroundColor: 'primary.main',
+          height: (theme) => `calc(100vh - ${theme.trello.broadBarHeight} - ${theme.trello.appBarHeight})`,
+          width: '100%',
+          display: 'flex',
+          alignItems: 'center'
+        }}>Content</Box>
+      </Container>
     </>
   );
 }
