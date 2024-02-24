@@ -34,26 +34,25 @@ function AppBar() {
                     <Typography variant='span' sx={{ fontSize: '1.2rem', fontWeight: 'bold', color: 'primary.main' }}>Trello</Typography>
                 </Box>
 
-                <Workspaces/>
-                <Recent/>
-                <Starred/>
-                <Templates/>
+                <Workspaces />
+                <Recent />
+                <Starred />
+                <Templates />
                 <Button variant='outlined'>Created</Button>
             </Box>
             <Box sx={{ display: 'flex', alignItems: 'center', gap: 2 }}>
                 <TextField size='small' id="outlined-search" label="Search" type='search' variant="outlined" />
                 <Tooltip title='notification'>
                     <Badge color='secondary' variant='dot' sx={{ cursor: 'pointer' }}>
-                        <NotificationsNoneIcon />
+                        <NotificationsNoneIcon sx={{ color: 'primary.main' }} />
                     </Badge>
                 </Tooltip>
                 <Tooltip title='help'>
-                    <HelpOutlineIcon sx={{ cursor: 'pointer' }}/>
+                    <HelpOutlineIcon sx={{ cursor: 'pointer', color: 'primary.main' }} />
                 </Tooltip>
-                <Profiles/>
+                <Profiles />
                 <ModeSelect />
             </Box>
-            <ModeSelect />
         </Box>
     );
 }
