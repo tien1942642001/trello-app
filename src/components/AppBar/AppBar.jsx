@@ -54,7 +54,6 @@ function AppBar() {
                 <ModeSelect />
             </Box>
         </Box>
-
     );
 }
 
