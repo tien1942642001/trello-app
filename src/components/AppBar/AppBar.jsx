@@ -53,6 +53,7 @@ function AppBar() {
                 <Profiles/>
                 <ModeSelect />
             </Box>
+            <ModeSelect />
         </Box>
     );
 }
