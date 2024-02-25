@@ -25,7 +25,9 @@ function AppBar() {
             width: '100%',
             display: 'flex',
             alignItems: 'center',
-            justifyContent: 'space-between'
+            justifyContent: 'space-between',
+            gap: 2,
+            overflowX: 'auto'
         }}>
             <Box sx={{ display: 'flex', alignItems: 'center', gap: 2 }}>
                 <AppsIcon sx={{ color: 'primary.main' }} />
@@ -34,14 +36,16 @@ function AppBar() {
                     <Typography variant='span' sx={{ fontSize: '1.2rem', fontWeight: 'bold', color: 'primary.main' }}>Trello</Typography>
                 </Box>
 
-                <Workspaces />
-                <Recent />
-                <Starred />
-                <Templates />
-                <Button variant='outlined'>Created</Button>
+                <Box sx={{ display: { xs: 'none', md: 'flex' }, gap: 1 }}>
+                    <Workspaces />
+                    <Recent />
+                    <Starred />
+                    <Templates />
+                    <Button variant='outlined'>Created</Button>
+                </Box>
             </Box>
             <Box sx={{ display: 'flex', alignItems: 'center', gap: 2 }}>
-                <TextField size='small' id="outlined-search" label="Search" type='search' variant="outlined" />
+                <TextField size='small' id="outlined-search" label="Search" type='search' variant="outlined" sx={{ minWidth: '120px' }} />
                 <Tooltip title='notification'>
                     <Badge color='secondary' variant='dot' sx={{ cursor: 'pointer' }}>
                         <NotificationsNoneIcon sx={{ color: 'primary.main' }} />
