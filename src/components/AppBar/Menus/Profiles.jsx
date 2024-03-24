@@ -33,7 +33,7 @@ function Profiles() {
                         aria-haspopup="true"
                         aria-expanded={open ? 'true' : undefined}
                     >
-                        <Avatar alt='anh' src='../../../assets/react.svg' sx={{ width: 30, height: 30 }}></Avatar>
+                        <Avatar alt='anh' src='../../../assets/react.svg' sx={{ width: '36px', height: '36px' }}></Avatar>
                     </IconButton>
                 </Tooltip>
             </Box>
@@ -47,10 +47,10 @@ function Profiles() {
                 }}
             >
                 <MenuItem>
-                    <Avatar sx={{ mr: 2, width: 30, height: 30 }} /> Profile
+                    <Avatar sx={{ mr: 2, width: '36px', height: '36px' }} /> Profile
                 </MenuItem>
                 <MenuItem>
-                    <Avatar sx={{ mr: 2, width: 30, height: 30 }} /> My account
+                    <Avatar sx={{ mr: 2, width: '36px', height: '36px' }} /> My account
                 </MenuItem>
                 <Divider />
                 <MenuItem>
