@@ -29,7 +29,7 @@ export default function Column({ column }) {
         setAnchorEl(null);
     };
 
-    const orderedCard = mapOrder(column?.cards, column?.cardOrderIds, '_id');
+    // this comment build fenkins
 
     return (
         <Box sx={{
