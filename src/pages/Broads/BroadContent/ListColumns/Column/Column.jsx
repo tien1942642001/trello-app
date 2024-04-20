@@ -38,11 +38,11 @@ export default function Column({ column }) {
 
     const { attributes, listeners, setNodeRef, transform, transition } = useSortable({ id: column._id, data: { ...column } });
 
-    const dndKitColumnStyle = {
-        touchAction: 'none',
-        transform: CSS.Translate.toString(transform),
-        transition
-    };
+    // const dndKitColumnStyle = {
+    //     touchAction: 'none',
+    //     transform: CSS.Translate.toString(transform),
+    //     transition
+    // };
 
     return (
         <Box
