@@ -28,6 +28,7 @@ export default function Column({ column }) {
     const handleClose = () => {
         setAnchorEl(null);
     };
+    // this is column component
 
     const orderedCard = mapOrder(column?.cards, column?.cardOrderIds, '_id');
 
