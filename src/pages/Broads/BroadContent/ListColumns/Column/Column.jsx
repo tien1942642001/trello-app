@@ -32,7 +32,7 @@ export default function Column({ column }) {
     };
     // this is column component
 
-    const orderedCard = mapOrder(column?.cards, column?.cardOrderIds, '_id');
+    // this comment build fenkins
 
     const { attributes, listeners, setNodeRef, transform, transition } = useSortable({ id: column._id, data: { ...column } });
 
